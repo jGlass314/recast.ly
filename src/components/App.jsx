@@ -14,6 +14,18 @@ class App extends React.Component {
     });
   }
   
+  componentDidMount() {
+    console.log('componentDidMount.');
+    searchYouTube({max: 5, query: 'lakers', key: window.YOUTUBE_API_KEY}, (data) => {
+      this.setState({
+        currentVideo: data[0],
+        videoList: data
+      });
+    }
+    );
+  }
+
+
   render() {
     return (
       <div>
