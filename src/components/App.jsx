@@ -19,7 +19,7 @@ class App extends React.Component {
       <div>
         <nav className="navbar">
           <div className="col-md-6 offset-md-3">
-            <div><h5><em>search</em> view goes here</h5></div>
+            <div><Search searchFunction={window.searchYouTube}/></div>
           </div>
         </nav>
         <div className="row">
