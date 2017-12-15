@@ -14,7 +14,7 @@ var searchYouTube = (options, callback) => {
       callback(data.items);
     },
     error: function(data) {
-      console.log('error', data);
+      console.error('error', data);
     }
   });
 };
